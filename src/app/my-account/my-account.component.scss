@@ -1,0 +1,246 @@
+@import'../../scss/mixin';
+
+.main-header {
+    @include display-flex;
+    @include flex-direction-row;
+    @include align-items-center;
+    /* @include justify-content-space-between; */
+    padding-bottom: 4px;
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 14px;
+}
+
+nav.custom-tab-nav .nav-tabs .nav-link {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    color: $text-dark;
+    margin-right: 10px;
+    border: 1px solid $form-input-bg;
+
+    &.active {
+        color: $brand-color;
+        background-color: $white-color;
+        border-color: $brand-color;
+    }
+
+    &:not(.active):hover {
+        color: $accent-color;
+        border-color: $text-dark-secondary-two;
+    }
+
+}
+
+nav.custom-tab-nav .nav-tabs {
+    border-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    nav.custom-tab-nav .nav-tabs {
+        display: block;
+
+        .nav-link {
+            display: block;
+            margin-right: 0;
+        }
+    }
+}
+
+.table-wrap {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.td-btn-wrapper {
+    white-space: nowrap;
+}
+
+/* tabs start */
+.tab-pane nav.custom-tab-nav .nav-tabs {
+    @include display-flex;
+}
+
+.table-wrap .table td.product-name {
+    white-space: normal;
+}
+
+/* tabs close */
+.order-shipment-header {
+    @include display-flex;
+    @include flex-direction-row;
+    @include align-items-center;
+    @include justify-content-space-between;
+    background: transparent;
+    padding: 14px;
+    border: 1px solid #eeeeee;
+    margin: 14px 0 24px;
+}
+
+.order-shipment-header .order-shipment-header-right {
+    margin-right: 14px;
+}
+
+.order-number {
+    font-weight: 700;
+    color: $text-dark;
+    line-height: 14px;
+    margin-bottom: 8px;
+}
+
+.order-date {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 14px;
+    color: $text-dark-secondary-two;
+}
+
+.order-status span {
+    color: $brand-color;
+}
+
+.order-shipment-header .btn-wrapper button.order-print-btn {
+    margin-bottom: 0;
+    margin-right: 14px;
+    padding: 0;
+    border: 0;
+    color: $brand-color;
+    @include transition;
+}
+
+.order-shipment-header .btn-wrapper button.order-print-btn:hover {
+    color: $light-primary-color;
+}
+
+.order-shipment-header .btn-wrapper button.order-print-btn:last-child {
+    margin-right: 0;
+}
+
+.order-shipment-header .btn-wrapper button.btn {
+    margin-bottom: 0;
+}
+
+.track-order-header {
+    @include display-flex;
+    @include flex-direction-row;
+    @include align-items-center;
+    @include justify-content-space-between;
+    background: transparent;
+    padding: 14px;
+    border: 1px solid #eeeeee;
+    margin: 14px 0 24px;
+}
+
+.track-order-product-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: $brand-color;
+}
+
+.track-order-number {
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+
+.track-order-header span {
+    color: $text-dark-secondary-two;
+}
+
+
+#nav-myReturnsCancellation .tools {
+    margin-left: auto;
+}
+
+.product-img-table-wrapper {
+    max-width: 180px;
+}
+
+.product-img-table-wrapper img {
+    width: 100%;
+}
+
+.recent-order-product-body table tfoot td[colspan="6"] {
+    text-align: right;
+}
+
+.recent-order-product-body table tfoot td {
+    text-align: left;
+}
+
+/* recent-order-product-body start */
+.order-detail-header,
+.order-shipment-header {
+    @include display-flex;
+    @include flex-direction-row;
+    @include align-items-center;
+    @include justify-content-space-between;
+    background: transparent;
+    padding: 14px;
+    border: 1px solid #eeeeee;
+    border-bottom: 0;
+    margin: 14px 0 0;
+}
+
+.order-detail-header .order-detail-header-right,
+.order-shipment-header .order-shipment-header-right {
+    margin-right: 14px;
+}
+
+.order-number {
+    font-weight: 700;
+    color: $text-dark;
+    line-height: 14px;
+    margin-bottom: 8px;
+}
+
+.order-date {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 14px;
+    color: $text-dark-secondary-two;
+}
+
+.order-status span {
+    color: $brand-color;
+}
+
+.order-detail-header .btn-wrapper button.order-print-btn,
+.order-shipment-header .btn-wrapper button.order-print-btn {
+    margin-bottom: 0;
+    margin-right: 14px;
+    padding: 0;
+    border: 0;
+    color: $brand-color;
+    @include transition;
+}
+
+.order-detail-header .btn-wrapper button.order-print-btn:hover,
+.order-shipment-header .btn-wrapper button.order-print-btn:hover {
+    color: $light-primary-color;
+}
+
+.order-detail-header .btn-wrapper button.order-print-btn:last-child,
+.order-shipment-header .btn-wrapper button.order-print-btn:last-child {
+    margin-right: 0;
+}
+
+.order-shipment-header .btn-wrapper button.btn {
+    margin-bottom: 0;
+}
+
+/* order-detail-header close */
+
+@media only screen and (max-width : 480px) {
+
+    .col-xs-6 {
+        width: 100%
+    }
+
+    .banner-img-wrapper img {
+        object-position: 77% 50%;
+    }
+}

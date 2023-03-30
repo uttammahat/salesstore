@@ -1,0 +1,59 @@
+@import '../../scss/mixin';
+
+// .scroll-to-top {
+//     position: fixed;
+//     bottom: 15px;
+//     right: 15px;
+//     opacity: 0;
+//     transition: all .2s ease-in-out;
+// }
+
+// .show-scrollTop {
+//     opacity: 1;
+//     transition: all .2s ease-in-out;
+// }
+
+/* scroll-top start */
+.scroll-top {
+    position: fixed;
+    right: 50px;
+    bottom: 18%;
+    height: 52px;
+    width: 52px;
+    @include display-flex;
+    @include align-items-center;
+    @include justify-content-center;
+    border-radius: 4px;
+    color: $white-color;
+    background-color: $brand-color;
+    box-shadow: inset 0 0 0 2px $dark-brand-color,
+        0 8px 16px -4px rgb(33 33 33 / 10%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 200ms linear;
+    z-index: 10;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $fill-dark;
+        box-shadow: inset 0 0 0 2px $fill-dark,
+            0 8px 16px -4px rgb(33 33 33 / 10%);
+        transform: translateY(-4px);
+    }
+
+    &.active-scroll {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .btn-icon__wrapper {
+        font-size: 20px;
+        margin: 0;
+        transition: all 200ms linear;
+    }
+
+}
+
+/* scroll-top close */

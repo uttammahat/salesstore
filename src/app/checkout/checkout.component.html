@@ -1,0 +1,218 @@
+<section class="checkout-page section-padding-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title title--md">Checkout</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="billing-detail-wrapper register">
+                    <div class="title-wrapper">
+                        <h2 class="title">Billing Details</h2>
+                    </div>
+                    <div class="aside-card-wrapper">
+                        <div formGroupName="shippingAddress" class="billing-detail-wrapper-form form">
+                            <div class="sub-header mb-4">
+                                <header>Choose Shipping Address</header>
+                                <div class="dashed-divider"></div>
+                            </div>
+                            <div class="address-wrapper shipping-address-selector-container p0 rounded-0">
+                                <div class="form-check-inline shipping-address__item">
+                                    <input type="radio" name="shipping_address_r" id="shipping-address-1"
+                                        class="form-check-input address-input shipping-Address-Input custom-control-input"
+                                        checked>
+                                    <label class="form-check-label mr-4" for="shipping-address-1">
+                                        <span class="label-text custom-control-label">
+                                            <span class="address-name">
+                                                <span class="city-name">Bhaktapur</span>
+                                                <span class="street-name">suryabinayak chowk near NIC ASIA bank</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <button class="btn item-delete-icon hint--top m-0" aria-label="Delete">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <div class="form-check-inline shipping-address__item">
+                                    <input type="radio" name="shipping_address_r" id="shipping-address-2"
+                                        class="form-check-input address-input shipping-Address-Input custom-control-input">
+                                    <label class="form-check-label mr-4" for="shipping-address-2">
+                                        <span class="label-text custom-control-label">
+                                            <span class="address-name">
+                                                <span class="city-name">Kathmandu</span>
+                                                <span class="street-name">new baneshowr chowk</span>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <button class="btn item-delete-icon hint--top m-0" aria-label="Delete">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="sub-header mb-4">
+                                <header>Add new address</header>
+                                <div class="dashed-divider"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cityId">Town/City</label>
+                                <select class="form-control" id="cityId">
+                                    <option value="" selected="true">Select City</option>
+                                    <option value="opt-1">opt-1</option>
+                                    <option value="opt-2">opt-2</option>
+                                    <option value="opt-3">opt-3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="streetAddress">Street Address</label>
+                                <input class="form-control" placeholder="House number and street name" type="text">
+                            </div>
+                            <div class="mt-5">
+                                <button type="button" class="btn primary-btn fill-primary btn--md">Add
+                                    address</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6">
+                <div class="your-order-card-wrapper">
+                    <div class="title-wrapper">
+                        <h2 class="title">Your Orders</h2>
+                    </div>
+                    <div class="aside-card-wrapper mb-5">
+                        <div class="cart-total-item-wrapper">
+                            <div class="cart-total-item">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12"><span
+                                            class="d-block txt-dark text-left font-weight-600">Products
+                                        </span> </div>
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="row mt-3">
+                                            <div class="col-6 col-md-7 col-lg-9"><span
+                                                    class="d-block txt-dark text-left">
+                                                    <span class="product-name mr-1">
+                                                        Adidas Ultraboost Web DNA Shoes
+                                                        Sportswear
+                                                    </span>
+                                                    <strong class="product-quantity">
+                                                        X 1
+                                                    </strong>
+                                                </span> </div>
+                                            <div class="col-6 col-md-5 col-lg-3">
+                                                Rs. 24,900</div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 col-md-7 col-lg-9"><span
+                                                    class="d-block txt-dark text-left">
+                                                    <span class="product-name mr-1">
+                                                        NMD_R1 Primeblue Shoes
+                                                    </span>
+                                                    <strong class="product-quantity">
+                                                        X 1
+                                                    </strong>
+                                                </span> </div>
+                                            <div class="col-6 col-md-5 col-lg-3">
+                                                Rs. 18,999</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-total-item">
+                                <div class="row">
+                                    <div class="col-6 col-md-7 col-lg-9"><span
+                                            class="d-block txt-dark text-left font-weight-600">Sub
+                                            Total
+                                        </span> </div>
+                                    <div class="col-6 col-md-5 col-lg-3">
+                                        Rs. 10,400</div>
+                                </div>
+                            </div>
+                            <div class="cart-total-item">
+                                <div class="row">
+                                    <div class="col-6 col-md-7 col-lg-9"><span
+                                            class="d-block txt-dark text-left font-weight-600">Total
+                                            Discount
+                                            Amount</span> </div>
+                                    <div class="col-6 col-md-5 col-lg-3">
+                                        Rs. 1,200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-total-item">
+                                <div class="row">
+                                    <div class="col-6 col-md-7 col-lg-9"><span
+                                            class="d-block txt-dark text-left font-weight-600">Total
+                                            Vat
+                                            Amount</span>
+                                    </div>
+                                    <div class="col-6 col-md-5 col-lg-3">
+                                        Rs. 800
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carts-item-total">
+                            <div class="row">
+                                <div class="col-6 col-md-7 col-lg-9"><span
+                                        class="d-block txt-dark text-left">Total</span>
+                                </div>
+                                <div class="col-6 col-md-5 col-lg-3">
+                                    Rs. 441,30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-card-wrapper">
+                    <div class="title-wrapper">
+                        <h2 class="title">Payment Method</h2>
+                    </div>
+                    <div class="aside-card-wrapper">
+                        <div class="payment-details-wrapper">
+                            <div class="payment-details-wrapper-form form">
+                                <div class="payment-details-wrapper mb-4">
+                                    <div class="invalid-feedback">Please select the paymeny mode.</div>
+                                    <div class="payment-details-wrapper-form">
+                                        <div class="custom-control custom-radio custom-control-block mb-3">
+                                            <input type="radio" class="custom-control-input" id="PickOnStore"
+                                                name="paymentModeId" value="PickOnStore">
+                                            <label class="custom-control-label" for="PickOnStore">
+                                                <span class="pl-4">Pickup your items at the store</span>
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-block mb-3">
+                                            <input type="radio" class="custom-control-input" id="CashOnDelivery"
+                                                name="paymentModeId" value="CashOnDelivery">
+                                            <label class="custom-control-label" for="CashOnDelivery">
+                                                <span class="pl-4">Cash On Delivery</span>
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-block mb-3">
+                                            <input type="radio" class="custom-control-input" id="Khalti"
+                                                name="paymentModeId" value="Khalti">
+                                            <label class="custom-control-label" for="Khalti">
+                                                <span class="pl-4">Khalti</span>
+                                            </label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-block mb-3">
+                                            <input type="radio" class="custom-control-input" id="eSewa"
+                                                name="paymentModeId" value="eSewa">
+                                            <label class="custom-control-label" for="eSewa">
+                                                <span class="pl-4">eSewa</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn primary-btn fill-primary">Place
+                    Order</button>
+            </div>
+        </div>
+
+    </div>
+</section>

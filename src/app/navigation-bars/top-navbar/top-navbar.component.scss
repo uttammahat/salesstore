@@ -1,0 +1,53 @@
+@import "../../../scss/mixin";
+
+/* top-navbar start */
+.top-navbar-wrapper {
+  background-color: #c0660f;
+  padding: 4px 0;
+  display: none;
+
+  li,
+  a,
+  p {
+    color: $white-color;
+    font-size: 12px;
+  }
+
+  a:hover {
+    color: $brand-color;
+  }
+
+  ul,
+  li {
+    @include display-flex;
+    @include align-items-center;
+    margin-bottom: 0;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  .icon-wrapper {
+    @include display-flex;
+    @include align-items-center;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-navbar-wrapper {
+    display: block;
+  }
+
+  .top-navbar {
+    @include display-flex;
+    @include align-items-center;
+    @include justify-content-space-between;
+    width: 100%;
+  }
+}
+
+/* top-navbar close */

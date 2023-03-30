@@ -1,0 +1,215 @@
+<section class="carts-page section-padding-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title title--md">Cart</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="cart-list--w-btn-wrapper">
+                    <div class="table-wrap table-responsive text-center cart-table-content">
+                        <table class="table morden-table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Products</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Discount</th>
+                                    <th class="subtotal">Total</th>
+                                    <th class="action">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="carts-product-img-td">
+                                        <div class="carts-product-img-name-wrapper">
+                                            <div class="product-img-table-wrapper">
+                                                <a routerLink="/products/product-detail">
+                                                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cefeab9f0256490eb47dadf30022fdf4_9366/Ultraboost_Web_DNA_Shoes_Grey_GZ1592_01_standard.jpg"
+                                                        alt="Adidas Ultraboost Web DNA Shoes">
+                                                </a>
+                                            </div>
+                                            <div class="product-name" data-title="Product">
+                                                <a routerLink="/products/product-detail">Adidas Ultraboost Web DNA Shoes
+                                                    Sportswear</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Price">
+                                        <span class="mobile-text">Price:</span>
+                                        Rs. 12,400</td>
+                                    <td class="product-qty-td" data-title="Quantity">
+                                        <div class="qty-width-wrapper">
+                                            <div class="qty-input qty--md">
+                                                <button class="qty-count qty-count--minus" data-action="minus"
+                                                    type="button">-</button>
+                                                <input class="product-qty" type="number" name="product-qty" min="0"
+                                                    max="50" value="1">
+                                                <button class="qty-count qty-count--add" data-action="add"
+                                                    type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Discount">
+                                        <span class="mobile-text">Discount:</span>
+                                        Rs. 1,200
+                                    </td>
+                                    <td class="subtotal txt-dark" data-title="Total">
+                                        <span class="mobile-text">
+                                            Total:</span> Rs. 10,400
+                                    </td>
+                                    <td class="action" data-title="Action">
+                                        <span class="mobile-text">Action</span>
+                                        <div class="item-delete-icon hint--top" aria-label="Delete">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="carts-product-img-td">
+                                        <div class="carts-product-img-name-wrapper">
+                                            <div class="product-img-table-wrapper">
+                                                <a href="#">
+                                                    <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2351&q=80"
+                                                        alt="Apple Mackbook Pro and Premium Beats Headphone">
+                                                </a>
+                                            </div>
+                                            <div class="product-name" data-title="Product">
+                                                <a routerLink="/products/product-detail">Apple Mackbook Pro and Premium
+                                                    Beats Headphone</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Price">
+                                        <span class="mobile-text">Price:</span>
+                                        Rs. 430,990</td>
+                                    <td class="product-qty-td" data-title="Quantity">
+                                        <div class="qty-width-wrapper">
+                                            <div class="qty-input qty--md">
+                                                <button class="qty-count qty-count--minus" data-action="minus"
+                                                    type="button">-</button>
+                                                <input class="product-qty" type="number" name="product-qty" min="0"
+                                                    max="50" value="1">
+                                                <button class="qty-count qty-count--add" data-action="add"
+                                                    type="button">+</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Discount">
+                                        <span class="mobile-text">Discount:</span>
+                                        -
+                                    </td>
+                                    <td class="subtotal txt-dark" data-title="Total">
+                                        <span class="mobile-text">
+                                            Total:</span> Rs. 430,900
+                                    </td>
+                                    <td class="action" data-title="Action">
+                                        <span class="mobile-text">Action</span>
+                                        <div class="item-delete-icon hint--top" aria-label="Delete">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="subtotal">
+                                    <td colspan="4" class="text-md-right pr-5">Sub Total</td>
+                                    <td class="subtotal">Rs. 441,30</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="multiple-btn-wrapper">
+                        <button routerLink="/catalog" type="button" class="btn accent-btn fill-light-accent">Continue
+                            Shipping</button>
+                        <button type="button" class="btn black-btn btn-outline fill-transparent">Clear Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="cart-sub-section-wrapper coupoun-wrapper">
+                    <div class="title">
+                        Apply Coupoun
+                    </div>
+                    <div class="aside-card-wrapper">
+                        <div class="coupoun-form-wrapper">
+                            <form name="coupoun_form" action="" method="post" class="coupoun-form">
+                                <div class="form-group coupoun-input-wrapper">
+                                    <input type="text" class="form-control" name="coupounProduct"
+                                        placeholder="Enter coupoun code">
+                                    <button class="btn primary-btn fill-primary">Apply</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="cart-sub-section-wrapper cart-total-wrapper">
+                    <h4 class="title">
+                        Cart Totals
+                    </h4>
+                    <div class="aside-card-wrapper cart-total-body">
+                        <div class="cart-total-item-wrapper">
+                            <div class="cart-total-item">
+                                <div class="row">
+                                    <div class="col-6 col-md-7 col-lg-9"><span
+                                            class="d-block txt-dark text-left font-weight-600">Sub
+                                            Total
+                                        </span> </div>
+                                    <div class="col-6 col-md-5 col-lg-3">
+                                        Rs. 10,400</div>
+                                </div>
+                            </div>
+                            <div class="cart-total-item">
+                                <div class="row">
+                                    <div class="col-6 col-md-7 col-lg-9"><span
+                                            class="d-block txt-dark text-left font-weight-600">Total
+                                            Discount
+                                            Amount</span> </div>
+                                    <div class="col-6 col-md-5 col-lg-3">
+                                        Rs. 1,200
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-total-item">
+                                <div class="row">
+                                    <div class="col-6 col-md-7 col-lg-9"><span
+                                            class="d-block txt-dark text-left font-weight-600">Total
+                                            Vat
+                                            Amount</span>
+                                    </div>
+                                    <div class="col-6 col-md-5 col-lg-3">
+                                        Rs. 800
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carts-item-total">
+                            <div class="row">
+                                <div class="col-6 col-md-7 col-lg-9"><span
+                                        class="d-block txt-dark text-left">Total</span>
+                                </div>
+                                <div class="col-6 col-md-5 col-lg-3">
+                                    Rs. 441,30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="multiple-btn-wrapper cart-btn--wrapper">
+                    <button routerLink="/checkout" type="button" class="btn primary-btn fill-primary">Proceed to
+                        Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

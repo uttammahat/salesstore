@@ -1,0 +1,63 @@
+@import '../../../scss/mixin';
+
+.list-item {
+    margin-bottom: 24px;
+
+    .list-header {
+        font-weight: 700;
+        margin-bottom: 14px;
+        color: $text-dark;
+    }
+
+    .list-body {
+        p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: $brand-color;
+            text-decoration: underline;
+
+            &:hover {
+                color: $accent-color;
+            }
+        }
+
+        ul li {
+            list-style-type: disc;
+        }
+
+        ol li {
+            list-style-type: decimal;
+        }
+
+
+        ul li,
+        ol li {
+            margin-bottom: 8px;
+        }
+
+        ol.list-style-none li,
+        ul.list-style-none li {
+            list-style-type: none;
+        }
+
+        ol.list-style-none,
+        ul.list-style-none {
+            margin-left: 24px;
+        }
+
+        ol.list-style-none li .list-number-bold,
+        ul.list-style-none li .list-number-bold {
+            margin-right: 10px;
+            font-weight: 500;
+        }
+    }
+
+    .list-body,
+    ul li,
+    ol li {
+        color: $text-dark;
+    }
+
+}

@@ -1,0 +1,121 @@
+<div class="tab-pane aside-card-wrapper fade show active" id="nav-my-detail" role="tabpanel"
+    aria-labelledby="nav-my-detail-tab">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Edit Profile</h2>
+            </div>
+            <div class="profile-wrapper">
+                <div class="personal-profile-body">
+                    <form class="edit-profile-form">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input class="form-control" id="firstName" placeholder="Enter First Name"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input class="form-control" id="lastName" placeholder="Enter Last Name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="emailAddress">Email</label>
+                                    <input class="form-control" id="emailAddress" placeholder="name@example.com"
+                                        type="email" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input class="form-control" pattern="[0-9]{10}" id="phoneNumber"
+                                        placeholder="Enter Phone Number" type="tel">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select class="form-control" id="country">
+                                        <option value="" selected="true">Select Country</option>
+                                        <option value="opt-1">opt-1</option>
+                                        <option value="opt-2">opt-2</option>
+                                        <option value="opt-3">opt-3</option>
+                                    </select>
+                                    <!-- <div class="invalid-feedback">
+                                                    Please select the country
+                                                </div> -->
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="stateProvince">State/Province</label>
+                                    <select class="form-control" id="stateProvince">
+                                        <option value="" selected="true">Select Province</option>
+                                        <option value="opt-1">opt-1</option>
+                                        <option value="opt-2">opt-2</option>
+                                        <option value="opt-3">opt-3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="cityId">Town/City</label>
+                                    <select class="form-control" id="cityId">
+                                        <option value="" selected="true">Select City</option>
+                                        <option value="opt-1">opt-1</option>
+                                        <option value="opt-2">opt-2</option>
+                                        <option value="opt-3">opt-3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="regionId">Regions</label>
+                                    <select class="form-control" id="regionId">
+                                        <option value="" selected="true">Select Region</option>
+                                        <option value="opt-1">opt-1</option>
+                                        <option value="opt-2">opt-2</option>
+                                        <option value="opt-3">opt-3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="streetAddress">Street Address</label>
+                                    <input class="form-control" placeholder="House number and street name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="streetAddress2">Street Address 2 <span
+                                            class="small txt-dark-secondary">(Optional)</span></label>
+                                    <input class="form-control" id="streetAddress2"
+                                        placeholder="House number and street name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="zipCode">Zip Code</label>
+                                    <input class="form-control" formControlName="zipCode" id="zipCode"
+                                        placeholder="Enter Zip Code" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="multiple-btn-wrapper mt-4">
+                                    <a routerLink="/account" class="btn black-btn btn-outline fill-transparent">Go
+                                        Back</a>
+                                    <button type="submit" class="btn primary-btn fill-primary">Save
+                                        Change</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
